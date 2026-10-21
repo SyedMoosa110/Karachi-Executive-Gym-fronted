@@ -1,0 +1,9 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth;background:#05070C}
+body{@apply bg-obsidian text-slate-50 font-sans antialiased overflow-x-hidden}
+@layer components{
+ .glass{@apply backdrop-blur-xl bg-white/[0.03] border border-white/[0.08] rounded-3xl transition-colors duration-300 hover:border-cyan-400/40}
+ .btn-lime{@apply inline-flex items-center gap-2 rounded-full bg-lime px-7 py-3.5 font-bold text-black shadow-lime hover:shadow-[0_0_35px_rgba(204,255,0,0.6)] transition-shadow}
+ .h-display{@apply font-display font-extrabold tracking-tight leading-[1.02]}
+ .sec{@apply relative mx-auto max-w-7xl px-5 py-24 md:py-32}
+}
